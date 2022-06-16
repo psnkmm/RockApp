@@ -1,5 +1,5 @@
-import 'package:coffee_shop/screens/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:rock_app/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Coffee Shop',
+      title: 'MISR Minerals Identify in Sedimentary Rock',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        fontFamily: "Lora",
+        // fontFamily: "Lora",
       ),
       home: const HomePage(),
     );
