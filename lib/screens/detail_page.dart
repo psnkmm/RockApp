@@ -92,7 +92,7 @@ class DetailPage extends StatelessWidget {
                   ),
                 ),
 
-                testText("หมวดหมู่ \n:", "${rockModel.rockCategory}", Colors.grey),
+                testText("หมวดหมู่:", rockModel.rockCategory, Colors.grey),
                 rockModel.rockType.contains(MINERAL)
                     ? testText("กลุ่มแร่:", "${rockModel.rockGroup}", Colors.grey)
                     : SizedBox(),
