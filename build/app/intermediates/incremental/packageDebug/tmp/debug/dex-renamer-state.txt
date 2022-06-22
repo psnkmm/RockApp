@@ -1,4 +1,0 @@
-#Thu Jun 16 18:41:35 ICT 2022
-base.0=/Users/macintosh/Desktop/stone/rockApp/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
