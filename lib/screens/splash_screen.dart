@@ -1,7 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rock_app/screens/home_page.dart';
-import 'package:splashscreen/splashscreen.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -12,18 +13,17 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   @override
+  void initState() {
+    super.initState();
+    Timer(
+        Duration(seconds: 3),
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => HomePage())));
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return SplashScreen(
-        seconds: 5,
-        navigateAfterSeconds: HomePage(),
-        title: Text(
-          'Your App Name',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-        ),
-        image: Image.asset('assets/misr_icon.jpg'),
-        backgroundColor: Colors.white,
-        styleTextUnderTheLoader: TextStyle(color: Colors.deepPurple),
-        photoSize: 100.0,
-        loaderColor: Colors.pinkAccent);
+    return Container(
+        color: Colors.white, child: Image.asset("assets/misr_icon.jpg"));
   }
 }
