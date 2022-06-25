@@ -77,7 +77,7 @@ class HomePageWidgetState extends State<HomePage> {
               data.rockColor
                   .toLowerCase()
                   .contains(enteredKeyword.toLowerCase()) ||
-              data.rockSpecific
+              data.rockHardness
                   .toLowerCase()
                   .contains(enteredKeyword.toLowerCase()))
           .toList();
